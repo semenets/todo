@@ -12,18 +12,30 @@ app.use(cors());
 let todos = [];
 
 // Получение всех задач
-app.get('/api/todos', (res) => {
-    res.json(todos);
+app.get('/api/todos', (req, res) => {
+    try {
+        console.log('GET /api/todos called');
+        res.json(todos);
+    } catch (error) {
+        console.error('Error in GET /api/todos:', error);
+        res.status(500).send('Internal Server Error');
+    }
 });
 
 // Добавление новой задачи с уникальным идентификатором
 app.post('/api/todos', (req, res) => {
-    const todo = {
-        id: uuidv4(),
-        text: req.body.text
-    };
-    todos.push(todo);
-    res.json(todo);
+    try {
+        console.log('POST /api/todos called with data:', req.body);
+        const todo = {
+            id: uuidv4(),
+            text: req.body.text
+        };
+        todos.push(todo);
+        res.json(todo);
+    } catch (error) {
+        console.error('Error in POST /api/todos:', error);
+        res.status(500).send('Internal Server Error');
+    }
 });
 
 app.listen(port, () => {
