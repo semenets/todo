@@ -29,7 +29,7 @@ const TodoList = () => {
 
     return (
         <div>
-            <h2>Todo List</h2>
+            <h2>Todo</h2>
             <form onSubmit={handleSubmit}>
                 <input type="text" value={newTodo} onChange={handleChange} />
                 <button type="submit">Add Todo</button>
