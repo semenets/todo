@@ -1,0 +1,66 @@
+.todo {
+  width: 400px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.todo h2 {
+  text-align: center;
+  color: #2155d4;
+  font-size: 25px;
+}
+
+.input-text {
+  height: 35px;
+  width: 290px;
+  font-size: 20px;
+  padding-left: 10px;
+  border: 1px solid #2f5bf5;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.add-button {
+  float: right;
+  height: 40px;
+  width: 70px;
+  background-color: #2f5bf5;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.list {
+  position: relative;
+  border-radius: 5px;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.list li {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  background-color: #c0e2e7;
+  font-size: 16px;
+  border: 1px solid #a9b4b9;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.delete-button {
+  position: absolute;
+  right: 3px;
+  background-color: #2d00aa;
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+  cursor: pointer;
+}

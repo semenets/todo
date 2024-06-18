@@ -11,7 +11,6 @@ app.use(cors());
 
 let todos = [];
 
-// Получение всех задач
 app.get('/api/todos', (req, res) => {
 	try {
 		console.log('GET /api/todos called');
@@ -22,7 +21,6 @@ app.get('/api/todos', (req, res) => {
 	}
 });
 
-// Добавление новой задачи с уникальным идентификатором
 app.post('/api/todos', (req, res) => {
 	try {
 		console.log('POST /api/todos called with data:', req.body);
@@ -38,7 +36,6 @@ app.post('/api/todos', (req, res) => {
 	}
 });
 
-// Удаление задачи по id
 app.delete('/api/todos/:id', (req, res) => {
 	try {
 		console.log(`DELETE /api/todos/${req.params.id} called`);
