@@ -47,7 +47,7 @@ const TodoList = () => {
 			<div className="todo">
 				<h2>Things to do:</h2>
 				<form onSubmit={handleSubmit}>
-					<input className="input-text" type="text" value={newTodo} onChange={handleChange} />
+					<input name="input-text" className="input-text" maxLength="30" type="text" value={newTodo} onChange={handleChange} />
 					<button className="add-button" type="submit">Add</button>
 				</form>
 				<ul className="list">
