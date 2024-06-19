@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { v4 as uuidv4 } from 'uuid';
 
 const TodoList = () => {
     const [todos, setTodos] = useState([]);
@@ -26,7 +25,7 @@ const TodoList = () => {
 				alert('This todo item already exists.');
 				return;
 			}
-			const todo = { id: uuidv4(), text: newTodo };
+			const todo = { text: newTodo };
 			axios.post('http://localhost:5000/api/todos', todo)
 				.then(res => {
 						setTodos([...todos, res.data]);
