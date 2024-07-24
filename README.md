@@ -6,6 +6,12 @@ A simple Todo List application built with React, allowing users to add, view, an
 
 ![Todo List Screenshot](todo-frontend/public/screenshot.png)
 
+## Features
+
+- **Add Todo:** Add new tasks to your list.
+- **View Todos:** See all your tasks in a list.
+- **Delete Todo:** Remove tasks that are no longer needed.
+
 ## How to Run
 
 ### Prerequisites
@@ -47,9 +53,3 @@ A simple Todo List application built with React, allowing users to add, view, an
    node server.js
 
 4. The backend server should now be running at http://localhost:5000.
-
-## Features
-
-- **Add Todo:** Add new tasks to your list.
-- **View Todos:** See all your tasks in a list.
-- **Delete Todo:** Remove tasks that are no longer needed.
