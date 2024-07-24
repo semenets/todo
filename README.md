@@ -4,7 +4,7 @@ A simple Todo List application built with React, allowing users to add, view, an
 
 ## Screenshot
 
-![Todo List Screenshot](public/screenshot.png)
+![Todo List Screenshot](todo-frontend/public/screenshot.png)
 
 ## How to Run
 
@@ -22,7 +22,7 @@ A simple Todo List application built with React, allowing users to add, view, an
 
 2. Navigate to the project directory:
    ```bash
-   cd todo-list
+   cd todo/todo-frontend
 
 3. Install the dependencies:
    ```bash
